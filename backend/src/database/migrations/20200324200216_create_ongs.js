@@ -9,6 +9,6 @@ exports.up = function(knex) {
     })
 };
 
-exports.down = function(knex) {
-    return knex.schema.dropTable('ongs');
+exports.down =  async function(knex) {
+     return await knex.schema.dropTable('ongs');
 };
